@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Your awesome title</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <title>Python Agent DEvelopment framework</title>
+    <description>PADE e um framework para desenvolvimento de sistemas multiagentes escrito em Python baseado na biblioteca Python Twisted e com base nos padroes FIPA
 </description>
-    <link>http://yourdomain.com/</link>
-    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 26 Jul 2015 23:39:58 -0300</pubDate>
-    <lastBuildDate>Sun, 26 Jul 2015 23:39:58 -0300</lastBuildDate>
+    <link>http://yourdomain.com/Pade/</link>
+    <atom:link href="http://yourdomain.com/Pade/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 27 Jul 2015 00:19:59 -0300</pubDate>
+    <lastBuildDate>Mon, 27 Jul 2015 00:19:59 -0300</lastBuildDate>
     <generator>Jekyll v2.5.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Sun, 26 Jul 2015 20:39:18 -0300</pubDate>
-        <link>http://yourdomain.com/jekyll/update/2015/07/26/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://yourdomain.com/jekyll/update/2015/07/26/welcome-to-jekyll.html</guid>
+        <link>http://yourdomain.com/Pade/jekyll/update/2015/07/26/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://yourdomain.com/Pade/jekyll/update/2015/07/26/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
