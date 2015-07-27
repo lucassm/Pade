@@ -1,52 +1,23 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+---
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Twisted agents : Este repositório contém o código-fonte da implementação de uma plataforma multiagente desnvolvida em Python-Twisted" />
+<div class="home">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+  <h1 class="page-heading">Posts</h1>
 
-    <title>Twisted agents</title>
-  </head>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-  <body>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/lucassm/Twisted_Agents">View on GitHub</a>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-          <h1 id="project_title">Twisted agents</h1>
-          <h2 id="project_tagline">Este repositório contém o código-fonte da implementação de uma plataforma multiagente desnvolvida em Python-Twisted</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/lucassm/Twisted_Agents/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/lucassm/Twisted_Agents/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="twisted_agents" class="anchor" href="#twisted_agents"><span class="octicon octicon-link"></span></a>Twisted_Agents</h1>
-
-<p>Este repositório contém o código-fonte da implementação de uma plataforma multiagente desnvolvida em Python-Twisted</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Twisted agents maintained by <a href="https://github.com/lucassm">lucassm</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
-</html>
+</div>
