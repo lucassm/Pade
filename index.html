@@ -3,10 +3,26 @@ layout: default
 ---
 
 <div class="home">
+    
+    <p>
+        PADE é um framework para desenvolvimento, execução e gerenciamento de sistemas multiagentes em ambientes de computação distribuída. 
+    </p>
 
-  <h1 class="page-heading">Posts</h1>
+    <p>
+        PADE é escrito 100% em Python e utiliza as bibliotecas do projeto Twisted para implementar a comunicação entre os nós da rede.
+    </p>
 
-  <ul class="post-list">
+    <p>
+        PADE é software livre, licenciado sob os termos da licença MIT, desenvolvido no ambito da Universidade Federal do Ceará pelo Grupo de Redes Elétricas Inteligentes (GREI) que pertence ao departamento de Engenharia Elétrica.
+    </p>
+
+    <p>
+        Qualquer um que queira contribuir com o projeto é convidado a baixar, executar, testar e enviar feedback a respeito das impressões tiradas da plataforma.
+    </p>
+
+<!--     <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -16,36 +32,39 @@ layout: default
         </h2>
       </li>
     {% endfor %}
-  </ul>
+    </ul> -->
 
-  <p>
-    
-    ```python
-    from pade.misc.utility import display_message
-    from pade.misc.common import set_ams, start_loop
-    from pade.core.agent import Agent
-    from pade.acl.aid import AID
+    <h1 class="page-heading">PADE é simples, fácil, divertido... é Python! </h1>
+
+    <p>
+    {% highlight python %}
+from pade.misc.utility import display_message
+from pade.misc.common import set_ams, start_loop
+from pade.core.agent import Agent
+from pade.acl.aid import AID
 
 
-    class AgenteHelloWorld(Agent):
-        def __init__(self, aid):
-            super(AgenteHelloWorld, self).__init__(aid=aid, debug=False)
-            display_message(self.aid.localname, 'Hello World!')
+class AgenteHelloWorld(Agent):
+    def __init__(self, aid):
+        super(AgenteHelloWorld, self).__init__(aid=aid, debug=False)
+        display_message(self.aid.localname, 'Hello World!')
 
-    if __name__ == '__main__':
+if __name__ == '__main__':
 
-        set_ams('localhost', 8000, debug=False)
+    set_ams('localhost', 8000, debug=False)
 
-        agents = list()
+    agents = list()
 
-        agente_hello = AgenteHelloWorld(AID(name='agente_hello'))
-        agente_hello.ams = {'name': 'localhost', 'port': 8000}
-        agents.append(agente_hello)
+    agente_hello = AgenteHelloWorld(AID(name='agente_hello'))
+    agente_hello.ams = {'name': 'localhost', 'port': 8000}
+    agents.append(agente_hello)
 
-        start_loop(agents, gui=True)
-    ```
-  </p>
+    start_loop(agents, gui=True)
+    {% endhighlight %}
+    </p>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+
 
 </div>
