@@ -22,4 +22,4 @@ if __name__ == '__main__':
 
 A essa altura você já deve estar vendo a interface gráfica de monitoramento dos agentes em Python, assim como essa:
 
-![Pade Interface](/img/InterfaceSniffer.png)
+![Pade Interface](img/InterfaceSniffer.png)

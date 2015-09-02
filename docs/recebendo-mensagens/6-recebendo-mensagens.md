@@ -60,8 +60,8 @@ if __name__ == '__main__':
 
 A seguir é possível observar a interface gráfica do PADE que mostra os agentes cadastrados no AMS.
 
-![Janela Agentes](/img/janela_agentes.png)
+![Janela Agentes](img/janela_agentes.png)
 
 Ao clicar na mensagem recebida pelo agente `destinatario` é possível observar todos os dados contidos na mensagem:
 
-![Janela Mensagem](/img/janela_mensagem.png)
+![Janela Mensagem](img/janela_mensagem.png)
