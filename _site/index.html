@@ -10,9 +10,9 @@
   <meta name="description" content="PADE e um framework para desenvolvimento de sistemas multiagentes escrito em Python baseado na biblioteca Python Twisted e com base nos padroes FIPA
 ">
 
-  <link rel="stylesheet" href="/Pade/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/Pade/">
-  <link rel="alternate" type="application/atom+xml" title="Python Agent DEvelopment framework" href="http://yourdomain.com/Pade/feed.xml" />
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://yourdomain.com/">
+  <link rel="alternate" type="application/atom+xml" title="Python Agent DEvelopment framework" href="http://yourdomain.com/feed.xml" />
 </head>
 
 
@@ -22,7 +22,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="/Pade/">Python Agent DEvelopment framework</a>
+    <a class="site-title" href="/">Python Agent DEvelopment framework</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -34,17 +34,8 @@
       </a>
 
       <div class="trigger">
-        
-          
-          <a class="page-link" href="/Pade/about/">About</a>
-          
-        
-          
-        
-          
-        
-          
-        
+          <a class="page-link" href="/about/">Sobre</a>
+          <a class="page-link" href="/docs/home/">Documentacao</a>
       </div>
     </nav>
 
@@ -55,23 +46,61 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <img src="img/pade_logo.svg" alt="">
+<br>
+<br>
+<div class="home">
+    
+    <p>
+        PADE é um framework para desenvolvimento, execução e gerenciamento de sistemas multiagentes em ambientes de computação distribuída. 
+    </p>
 
-  <h1 class="page-heading">Posts</h1>
+    <p>
+        PADE é escrito 100% em Python e utiliza as bibliotecas do projeto Twisted para implementar a comunicação entre os nós da rede.
+    </p>
 
-  <ul class="post-list">
+    <p>
+        PADE é software livre, licenciado sob os termos da licença MIT, desenvolvido no ambito da Universidade Federal do Ceará pelo Grupo de Redes Elétricas Inteligentes (GREI) que pertence ao departamento de Engenharia Elétrica.
+    </p>
+
+    <p>
+        Qualquer um que queira contribuir com o projeto é convidado a baixar, executar, testar e enviar feedback a respeito das impressões tiradas da plataforma.
+    </p>
+
+<!--     <h1 class="page-heading">Posts</h1>
+
+    <ul class="post-list">
     
       <li>
         <span class="post-meta">Jul 26, 2015</span>
 
         <h2>
-          <a class="post-link" href="/Pade/jekyll/update/2015/07/26/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+          <a class="post-link" href="/jekyll/update/2015/07/26/welcome-to-jekyll.html">Welcome to Jekyll!</a>
         </h2>
       </li>
     
-  </ul>
+    </ul> -->
 
-  <p class="rss-subscribe">subscribe <a href="/Pade/feed.xml">via RSS</a></p>
+    <h1 class="page-heading">PADE é simples, fácil, divertido... é Python! </h1>
+
+    <p>
+    <div class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># este e o arquivo start_ams.py</span>
+<span class="kn">from</span> <span class="nn">pade.misc.common</span> <span class="kn">import</span> <span class="n">set_ams</span><span class="p">,</span> <span class="n">start_loop</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">set_ams</span><span class="p">(</span><span class="s">&#39;localhost&#39;</span><span class="p">,</span> <span class="mi">8000</span><span class="p">)</span>
+    <span class="n">start_loop</span><span class="p">(</span><span class="nb">list</span><span class="p">(),</span> <span class="n">gui</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span></code></pre></div>
+    </p>
+
+    <img src="img/InterfaceSniffer.png" alt="Pade Interface">
+    
+    Para instalar o PADE basta executar o seguinte comando em um terminal linux:
+
+    <p>
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nv">$ </span>pip install pade
+<span class="nv">$ </span>python start_ams.py</code></pre></div>
+    </p>
+
 
 </div>
 
@@ -88,7 +117,7 @@
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>Python Agent DEvelopment framework</li>
-          <li><a href="mailto:your-lucassmelo@dee.ufc.br">your-lucassmelo@dee.ufc.br</a></li>
+          <li><a href="mailto:lucassmelo@dee.ufc.br">lucassmelo@dee.ufc.br</a></li>
         </ul>
       </div>
 

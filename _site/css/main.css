@@ -11,8 +11,8 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: Georgia, serif;
+  font-size: 17px;
   line-height: 1.5;
   font-weight: 300;
   color: #111;
@@ -42,7 +42,7 @@ figure > img {
   display: block; }
 
 figcaption {
-  font-size: 14px; }
+  font-size: 14.875px; }
 
 /**
  * Lists
@@ -100,7 +100,7 @@ code {
 
 pre {
   padding: 8px 12px;
-  overflow-x: scroll; }
+  /*overflow-x: scroll;*/ }
   pre > code {
     border: 0;
     padding-right: 0;
@@ -270,7 +270,7 @@ pre {
     margin-bottom: 30px; }
 
 .post-meta {
-  font-size: 14px;
+  font-size: 14.875px;
   color: #828282; }
 
 .post-link {
