@@ -6,12 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>Documentacao</title>
+  <title>Enviando Objetos</title>
   <meta name="description" content="PADE e um framework para desenvolvimento de sistemas multiagentes escrito em Python baseado na biblioteca Python Twisted e com base nos padroes FIPA
 ">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/docs/home/">
+  <link rel="canonical" href="http://yourdomain.com/docs/enviando-objetos/">
   <link rel="alternate" type="application/atom+xml" title="Python Agent DEvelopment framework" href="http://yourdomain.com/feed.xml" />
 </head>
 
@@ -49,93 +49,25 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Documentacao</h1>
+    <h1 class="post-title">Enviando Objetos</h1>
   </header>
 
   <article class="post-content">
-    <h1>Bem vindo a documentacão do PADE!</h1>
+    <p>Nem sempre o que é preciso enviar para outros agentes pode ser representado por texto simpes não é mesmo!
+Para enviar objetos encapsulados no content de mensagens FIPA-ACL com PADE basta utilizar o módulo nativo do Python <code>pickle</code>, usando:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">import</span> <span class="nn">pickle</span>
+</code></pre></div>
+<p><code>pickle</code> é uma biblioteca para serialização de objetos, assim, para serializar um objeto qualquer, utilize <code>pickle.dumps()</code>, veja:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">dados</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;nome&#39;</span> <span class="p">:</span> <span class="s">&#39;agente_consumidor&#39;</span><span class="p">,</span> <span class="s">&#39;porta&#39;</span> <span class="p">:</span> <span class="mi">2004</span><span class="p">}</span>
+<span class="n">dados_serial</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">dados</span><span class="p">)</span>
+<span class="n">message</span><span class="o">.</span><span class="n">set_content</span><span class="p">(</span><span class="n">dados_serial</span><span class="p">)</span>
+</code></pre></div>
+<p>Pronto! O objeto já pode ser enviado no conteúdo da mensagem. Agora para receber o objeto, basta carregá-lo utilizando o comando:</p>
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">dados_serial</span> <span class="o">=</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span>
+<span class="n">dados</span> <span class="o">=</span> <span class="n">pickle</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">dados_serial</span><span class="p">)</span>
+</code></pre></div>
+<p>Simples assim ;)</p>
 
-<ul class="page-list">
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/instalacao/">Instalação</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/hello-world/">Hello World</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/meu-primeiro-agente/">Meu Primeiro Agente</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/agentes-temporais/">Agentes Temporais</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/enviando-mensagens/">Enviando Mensagens</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/recebendo-mensagens/">Recebendo Mensagens</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/um-momento-por-favor/">Um momento por favor!</a>
-          </li>
-        
-    
-
-    
-        
-          <li>
-              <a class="page-link" href="/docs/enviando-objetos/">Enviando Objetos</a>
-          </li>
-        
-    
-
-    
-        
-    
-
-    
-
-    
-
-    
-        
-    
-
-    
-
-</ul>
   </article>
 
 </div>
