@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Hello World
+image: '/assets/img/'
+description: Inicializando a plataforma PADE
 categories: docs
 permalink: /docs/hello-world/
 ---

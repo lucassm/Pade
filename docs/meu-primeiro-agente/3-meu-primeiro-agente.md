@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Meu Primeiro Agente
+image: '/assets/img/'
+description: Como criar um agente!
 categories: docs
 permalink: /docs/meu-primeiro-agente/
 ---

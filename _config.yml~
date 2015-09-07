@@ -1,0 +1,29 @@
+# Site settings
+title: Python Agent DEvelopment framework
+email: lucassmelo@dee.ufc.br
+description: > # this means to ignore newlines until "baseurl:"
+  PADE e um framework para desenvolvimento de sistemas multiagentes escrito em Python
+  baseado na biblioteca Python Twisted e com base nos padroes FIPA
+baseurl: "" 
+# baseurl: "/Pade" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: lucas_LM
+github_username:  lucassm
+
+# Build settings
+markdown: redcarpet
+
+defaults:
+    -
+        scope:
+            path: ""
+            type: "posts"
+        values:
+            layout: "default"
+    -
+        scope:
+            path: "projects"
+            type: "pages"
+        values:
+            layout: "project"
+            author: "Lucas Melo"

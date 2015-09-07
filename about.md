@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Sobre
+description: Informações a respeito do PADE e seus idealizadores
 permalink: /about/
 ---
 

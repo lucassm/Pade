@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Recebendo Mensagens
+description: Como receber mensagens no PADE
 categories: docs
 permalink: /docs/recebendo-mensagens/
 ---

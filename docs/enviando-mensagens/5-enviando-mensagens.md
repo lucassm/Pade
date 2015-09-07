@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Enviando Mensagens
+image: '/assets/img/'
+description: Como enviar mensagens no padrão FIPA-ACL com PADE
 categories: docs
 permalink: /docs/enviando-mensagens/
 ---

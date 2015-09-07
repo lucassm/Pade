@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Um momento por favor!
+description: utilizando o método call_later() no PADE
 categories: docs
 permalink: /docs/um-momento-por-favor/
 ---

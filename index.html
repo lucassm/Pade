@@ -1,65 +1,65 @@
 ---
 layout: default
+
 ---
 
-<img src="img/pade_logo.svg" alt="">
-<br>
-<br>
-<div class="home">
-    
-    <p>
-        PADE é um framework para desenvolvimento, execução e gerenciamento de sistemas multiagentes em ambientes de computação distribuída. 
-    </p>
+<main id="scroll" class="home" role="main" itemprop="mainContentOfPage" itemscope="itemscope">
+    <article role="article" class="post-item" itemscope="itemscope" itemprop="blogPost">
+    <div class="content">
+        <p class="description">
+            PADE é um framework para desenvolvimento, execução e gerenciamento de sistemas multiagentes em ambientes de computação distribuída. 
+        </p>
+        <p class="description">
+            PADE é escrito 100% em Python e utiliza as bibliotecas do projeto Twisted para implementar a comunicação entre os nós da rede.
+        </p>
 
-    <p>
-        PADE é escrito 100% em Python e utiliza as bibliotecas do projeto Twisted para implementar a comunicação entre os nós da rede.
-    </p>
+        <p class="description">
+            PADE é software livre, licenciado sob os termos da licença MIT, desenvolvido no ambito da Universidade Federal do Ceará pelo Grupo de Redes Elétricas Inteligentes (GREI) que pertence ao departamento de Engenharia Elétrica.
+        </p>
 
-    <p>
-        PADE é software livre, licenciado sob os termos da licença MIT, desenvolvido no ambito da Universidade Federal do Ceará pelo Grupo de Redes Elétricas Inteligentes (GREI) que pertence ao departamento de Engenharia Elétrica.
-    </p>
+        <p class="description">
+            Qualquer um que queira contribuir com o projeto é convidado a baixar, executar, testar e enviar feedback a respeito das impressões tiradas da plataforma.
+        </p>
 
-    <p>
-        Qualquer um que queira contribuir com o projeto é convidado a baixar, executar, testar e enviar feedback a respeito das impressões tiradas da plataforma.
-    </p>
+    <!--     <h1 class="page-heading">Posts</h1>
 
-<!--     <h1 class="page-heading">Posts</h1>
+        <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+        </ul> -->
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-    </ul> -->
+        <h1 class="page-heading">PADE é simples, fácil, divertido... é Python! </h1>
 
-    <h1 class="page-heading">PADE é simples, fácil, divertido... é Python! </h1>
-
-    <p>
-    {% highlight python %}
-# este e o arquivo start_ams.py
+        <p class="description">
+        {% highlight python %}
+    # este e o arquivo start_ams.py
 from pade.misc.common import set_ams, start_loop
 
 if __name__ == '__main__':
     set_ams('localhost', 8000)
     start_loop(list(), gui=True)
-    {% endhighlight %}
-    </p>
+        {% endhighlight %}
+        </p>
 
-    <img src="img/InterfaceSniffer.png" alt="Pade Interface">
-    
-    Para instalar o PADE basta executar o seguinte comando em um terminal linux:
+        <img src="img/InterfaceSniffer.png" alt="Pade Interface">
+        
+        <p class="description">
+            Para instalar o PADE basta executar o seguinte comando em um terminal linux:
+        </p>
 
-    <p>
-{% highlight bash %}
+        <p class="description">
+    {% highlight bash %}
 $ pip install pade
 $ python start_ams.py
-{% endhighlight %}
-    </p>
-
-
-</div>
+    {% endhighlight %}
+        </p>
+    </div>
+    </article>
+</main>

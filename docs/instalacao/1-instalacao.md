@@ -1,6 +1,8 @@
 ---
-layout: page
+layout: post
 title: Instalação
+image: '/assets/img/'
+description: Como instalar o PADE no seu computador utilizando o terminal e o comando pip install
 categories: docs
 permalink: /docs/instalacao/
 ---
