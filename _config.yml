@@ -38,7 +38,7 @@ defaults:
 # For external links add external: true
 links:
   - title: Home
-    url: baseurl/
+    url: /
   - title: Documentação
     url: /docs/home
   - title: Sobre
