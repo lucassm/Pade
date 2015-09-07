@@ -10,8 +10,8 @@ user_title: Python para multiagentes
 description: > # this means to ignore newlines until "baseurl:"
   PADE e um framework para desenvolvimento de sistemas multiagentes escrito em Python
   baseado na biblioteca Python Twisted e com base nos padroes FIPA
-baseurl: "" 
-# baseurl: "/Pade" # the subpath of your site, e.g. /blog/
+# baseurl: "" 
+baseurl: "/Pade" # the subpath of your site, e.g. /blog/
 twitter_username: lucas_LM
 github_username:  lucassm
 
