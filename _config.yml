@@ -12,6 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   baseado na biblioteca Python Twisted e com base nos padroes FIPA
 # baseurl: "" 
 baseurl: "/Pade" # the subpath of your site, e.g. /blog/
+url: "http://lucassm.github.com/Pade"
 twitter_username: lucas_LM
 github_username:  lucassm
 
@@ -37,7 +38,7 @@ defaults:
 # For external links add external: true
 links:
   - title: Home
-    url: /
+    url: baseurl/
   - title: Documentação
     url: /docs/home
   - title: Sobre
