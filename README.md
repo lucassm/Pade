@@ -1,5 +1,8 @@
+This repository isn't more the PADE offcial repository. The new PADE repository has been changed to: [](https://github.com/grei-ufc/pade).
+-----
+
 Python Agent DEvelopment framework (PADE)
-==============
+======
 
 [![Join the chat at https://gitter.im/lucassm/Pade](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/lucassm/Pade?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
